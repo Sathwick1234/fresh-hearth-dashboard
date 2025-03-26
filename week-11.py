@@ -1,16 +1,17 @@
 import streamlit as st
 from PIL import Image
 
-# Load and display the logo
-logo = Image.open("brandpulselogo.png")  # make sure the filename matches your uploaded image
-st.image(logo, width=150)  # Adjust width as needed
+# ✅ Must come before any other Streamlit commands
+st.set_page_config(page_title="Fresh Hearth Dashboard", layout="wide")
+
+# Then show logo or title
+logo = Image.open("logo.png")
+with st.sidebar:
+    st.image(logo, width=150)
 
 import pandas as pd
 import plotly.express as px
 import random
-
-# Set up the page
-st.set_page_config(page_title="Fresh Hearth Dashboard", layout="wide")
 
 # Sidebar - Customized Profile Section
 st.sidebar.markdown("### 👤 Your Profile")
