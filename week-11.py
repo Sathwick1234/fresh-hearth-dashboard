@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # Load and display the logo
-logo = Image.open("logo.png")  # make sure the filename matches your uploaded image
+logo = Image.open("brandpulselogo.png")  # make sure the filename matches your uploaded image
 st.image(logo, width=150)  # Adjust width as needed
 
 import pandas as pd
