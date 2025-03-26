@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config(page_title="Fresh Hearth Dashboard", layout="wide")
 
 # Then show logo or title
-logo = Image.open("logo.png")
+logo = Image.open("brandpulselogo.png")
 with st.sidebar:
     st.image(logo, width=150)
 
